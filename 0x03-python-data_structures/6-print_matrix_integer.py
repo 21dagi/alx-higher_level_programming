@@ -1,24 +1,17 @@
 #!/usr/bin/python3
-def print_matrix_integer(matrix=[[]]):
-    """Prints a matrix of integers
 
-    Args:
-        matrix: a matrix
+def print_matrix_integer(matrix=[[]]):
+    """function that prints a matrix of integers
+
+    You are not allowed to import any module
+    You can assume that the list only contains integers
+    You are not allowed to cast integers into strings
+    You have to use str.format() to print integers
     """
 
-    # If no argument is supplied print a newline
-    if not matrix:
+    for row in range(len(matrix)):
+        for column in range(len(matrix[row])):
+            if column != 0:
+                print(" ", end='')
+            print("{:d}".format(matrix[row][column]), end='')
         print()
-    else:
-        # Loop through the rows
-        for row in matrix:
-            # Loop through the items in row
-            for item in row:
-                # Add space between items if not last item in row
-                if row.index(item) != len(row) - 1:
-                    endspace = " "
-                else:
-                    endspace = ""
-                # Print the items in the row
-                print("{:d}".format(item), end=endspace)
-            print()

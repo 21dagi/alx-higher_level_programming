@@ -1,21 +1,17 @@
 #!/usr/bin/python3
-import sys
+if __name__ == "__main__":
 
-if __name__ != "__main__":
-    exit()
+    from sys import argv
+    count = 1
 
-argStr = "{:d} argument"
-argc = len(sys.argv) - 1
-if argc == 0:
-    argStr += 's.'
-elif argc == 1:
-    argStr += ':'
-else:
-    argStr += 's:'
-print(argStr.format(argc))
-
-i = 0
-for arg in sys.argv:
-    if i != 0:
-        print("{:d}: {:s}".format(i, arg))
-    i += 1
+    # excludes name of program
+    number_of_args = len(argv) - 1
+    if number_of_args == 0:
+        print(f"{number_of_args:d} arguments.")
+    if number_of_args == 1:
+        print(f"{number_of_args:d} argument:")
+    if number_of_args > 1:
+        print(f"{number_of_args:d} arguments:")
+    while count < len(argv):
+        print(f"{count:d}: {argv[count]}")
+        count += 1

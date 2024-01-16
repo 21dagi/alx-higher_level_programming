@@ -1,10 +1,12 @@
 #!/usr/bin/python3
+
 def best_score(a_dictionary):
-    if a_dictionary is not None:
-        students_number = len(a_dictionary.values())
-        if students_number > 0:
-            score = max(a_dictionary.values())
-            for key in a_dictionary.keys():
-                if a_dictionary[key] == score:
-                    return key
+    """returns a key with the biggest integer value.
+    You can assume that all values are only integers
+    If no score found, return None
+    You can assume all students have a different score
+    You are not allowed to import any module
+    """
+    if a_dictionary:
+        return max(a_dictionary, key=a_dictionary.get)
     return None

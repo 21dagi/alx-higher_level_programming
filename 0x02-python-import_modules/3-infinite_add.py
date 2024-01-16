@@ -1,16 +1,19 @@
 #!/usr/bin/python3
-import sys
+from ast import Add
+from audioop import add
 
-if __name__ != "__main__":
-    exit()
 
-argc = len(sys.argv) - 1
+if __name__ == "__main__":
 
-i = 0
-result = 0
-for arg in sys.argv:
-    if i != 0:
-        result += int(arg)
-    else:
-        i += 1
-print("{:d}".format(result))
+    from sys import argv
+    addition = 0
+
+    number_of_args = len(argv)
+
+    if number_of_args == 0:
+        print(f"{addition:d}")
+    for argument in argv:
+        if argument != argv[0]:
+            addition += int(argument)
+
+    print("{}".format(addition))

@@ -1,18 +1,20 @@
 #!/usr/bin/python3
+
 def max_integer(my_list=[]):
-    """
-    Args:
-        my_list: a list
+    """function that returns biggest integer in list
 
-    Returns:
-        the biggest integer in list or none if list is empty
+    If the list is empty, return None
+    You can assume that the list only contains integers
+    You are not allowed to import any module
+    You are not allowed to use the builtin max()
     """
 
-    if len(my_list) == 0:
-        return None
-    else:
-        biggest_int = my_list[0]
-        for index in range(len(my_list)):
-            if my_list[index] > biggest_int:
-                biggest_int = my_list[index]
-    return biggest_int
+    list_length = len(my_list)
+
+    if list_length == 0:
+        return
+
+    # sort the list in ascending order
+    my_list.sort()
+
+    return my_list[-1]
