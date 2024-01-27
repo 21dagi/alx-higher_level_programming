@@ -1,14 +1,3 @@
-# Project Name
-**0x00. Python - Hello, World**
-
-## Author's Details
-Name: *Wendy Munyasi.*
-
-Email: *wendymunyasi@gmail.com*
-
-Tel: *+254707240068.*
-
-##  Requirements
 
 ### Python Scripts
 *   Allowed editors: `vi`, `vim`, `emacs`.

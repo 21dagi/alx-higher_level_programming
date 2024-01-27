@@ -1,12 +1,3 @@
-# Project Name
-**0x0A. Python - Inheritance**
-
-## Author's Details
-Name: *Wendy Munyasi.*
-
-Email: *wendymunyasi@gmail.com*
-
-Tel: *+254707240068.*
 
 ##  Requirements
 

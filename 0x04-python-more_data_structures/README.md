@@ -1,12 +1,3 @@
-# Project Name
-**0x04. Python - More Data Structures: Set, Dictionary**
-
-## Author's Details
-Name: *Wendy Munyasi.*
-
-Email: *wendymunyasi@gmail.com*
-
-Tel: *+254707240068.*
 
 ##  Requirements
 
